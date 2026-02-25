@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'Planes ValMore';
+            src: url('./Planes_ValMore.ttf') format('truetype');
+            font-display: swap;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background: #0f1015;
+            font-family: 'Planes ValMore', sans-serif;
+        }
+
+        #game {
+            width: min(calc(100vw - 16px), calc((100vh - 16px) * 4 / 3));
+            height: auto;
+            max-width: 640px;
+            max-height: 480px;
+            aspect-ratio: 4 / 3;
+            border: 1px solid #000000;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+        
+        </style>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <canvas id="game" width="640" height="480"></canvas>
+    <img id="playerIdle" src="Pink_Monster_Idle_4.png" hidden>
+    <img id="playerWalk" src="Pink_Monster_Walk_6.png" hidden>
+    <img id="playerJump" src="Pink_Monster_Jump_8.png" hidden>
+    <img id="playerAttack" src="Pink_Monster_Attack1_4.png" hidden>
+    <img id="playerAttackWalk" src="Pink_Monster_Walk+Attack_6.png" hidden>
+    <img id="playerRun" src="Pink_Monster_Run_6.png" hidden>
+    <img id="playerClimb" src="Pink_Monster_Climb_4.png" hidden>
+    <img id="layer1" src="background/1.png" hidden>
+    <img id="layer2" src="background/2.png" hidden>
+    <img id="layer3" src="background/3.png" hidden>
+    <img id="layer4" src="background/4.png" hidden> 
+    <img id="jumpDust" src="Double_Jump_Dust_5.png" hidden>
+    <img id="dustFloor" src="Walk_Run_Push_Dust_6.png" hidden>
+    <img id="tileSet" src="Tileset.png" hidden>
+    <img id="ladderBottom" src="Ladder/LadderFloor.png" hidden>
+    <img id="ladderMiddle" src="Ladder/LadderMiddle.png" hidden>
+    <img id="ladderTop" src="Ladder/LadderTop.png" hidden>
+    <img id="diamondSprite" src="diamond.png" hidden>
+    <img id="ironSprite" src="Iron.png" hidden>
+    <img id="goldSprite" src="gold.png" hidden>
+    <img id="stoneSprite" src="stone.png" hidden>
+    <img id="barkSprite" src="Bark.png" hidden>
+    <img id="woodPlanksSprite" src="WoodPlanks.png" hidden>
+    <img id="runeSprite" src="Rune.png" hidden>
+    <img id="diamondIconSprite" src="Diamonicon.png" hidden>
+    <img id="ironIconSprite" src="Ironicon.png" hidden>
+    <img id="goldIconSprite" src="Goldicon.png" hidden>
+    <img id="pickaxeSprite" src="pickaxe.png" hidden>
+    <img id="axeSprite" src="Axe.png" hidden>
+    <img id="laserSprite" src="lazer.png" hidden>
+</body>
+</html>
